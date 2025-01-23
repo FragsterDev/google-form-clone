@@ -36,15 +36,15 @@ function Form(){
     }
 
     return(
-        <>
-            <Top />
-            <Name text={name} setText={setName} error={nameError} setError={setNameError} />
-            <Email text={email} setText={setEmail} error={emailError} setError={setEmailError} />
-            <Address text={address} setText={setAddress} error={addressError} setError={setAddressError} />
-            <Phone text={phone} setText={setPhone} error={phoneError} setError={setPhoneError} />
-            <Comments text={comments} setText={setComments}/>
-            <Footer clearForm={clearForm}/>
-        </>
+            <div className="p-5">
+                <Top />
+                <Name text={name} setText={setName} error={nameError} setError={setNameError} />
+                <Email text={email} setText={setEmail} error={emailError} setError={setEmailError} />
+                <Address text={address} setText={setAddress} error={addressError} setError={setAddressError} />
+                <Phone text={phone} setText={setPhone} error={phoneError} setError={setPhoneError} />
+                <Comments text={comments} setText={setComments}/>
+                <Footer clearForm={clearForm}/>
+            </div>
     );
 }
 

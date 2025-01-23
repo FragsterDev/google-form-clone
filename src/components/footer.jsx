@@ -3,7 +3,7 @@ function FooterText(){
     return (
 
         <>
-            <div className="flex gap-4 flex-col footerText w-1/3 p-1 mx-auto text-xs mt-2" style={{color: "rgb(128,135,126)", width: '636px'}}>
+            <div className="flex gap-4 flex-col footerText w-full md:w-[636px] max-w-[636px] p-1 mx-auto text-xs mt-2" style={{color: "rgb(128,135,126)"}}>
                 <p>Never submit passwords through Google Forms</p>
                 <p className="mx-auto">This content is neither created nor endorsed by Google. - <a href="#terms of service" className="underline">Terms of Service</a> - 
                 <a href="" className="underline"> Privacy Policy </a></p>
@@ -21,7 +21,7 @@ function Footer({clearForm}){
 
     return(
     <>
-        <div className="footer flex justify-between w-1/3 p-1 mx-auto mt-2 border-solid border" style={{width: '636px'}}>
+        <div className="footer flex justify-between w-full md:w-[636px] max-w-[636px] p-1 mx-auto mt-2 border-solid border">
             <div className="submit">
                 <button className=" text-white p-1 w-24 rounded-md" style={{backgroundColor: 'rgb(42,137,12)'}}>Submit</button>
             </div>
