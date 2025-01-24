@@ -16,7 +16,7 @@ function Name({text, setText, error, setError}) {
   return (
     <>
 
-      <div className="name-container w-full md:w-[636px] max-w-[636px] bg-white rounded-lg p-6 mt-3 mx-auto flex flex-col gap-7 border-solid border">
+      <div className="name-container md:w-[636px] max-w-[636px] bg-white rounded-lg p-6 mt-3 mx-auto flex flex-col gap-7 border-solid border">
 
         <p className="">Name <span className='text-red-500'>*</span></p>
         <input type="text" className="name-input placeholder:text-sm outline-none focus:border-green-600 border-b-2 w-1/2" placeholder='Your Answer'

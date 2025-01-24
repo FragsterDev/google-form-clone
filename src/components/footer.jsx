@@ -21,7 +21,7 @@ function Footer({clearForm}){
 
     return(
     <>
-        <div className="footer flex justify-between w-full md:w-[636px] max-w-[636px] p-1 mx-auto mt-2 border-solid border">
+        <div className="footer flex justify-between w-full md:w-[636px] max-w-[636px] p-1 mx-auto mt-2">
             <div className="submit">
                 <button className=" text-white p-1 w-24 rounded-md" style={{backgroundColor: 'rgb(42,137,12)'}}>Submit</button>
             </div>

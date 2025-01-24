@@ -1,11 +1,7 @@
 import { useState } from "react";
-import Name from './components/name.jsx'
-import Address from './components/Address.jsx'
-import Email from './components/email.jsx'
-import Phone from './components/phone.jsx'
-import Comments from './components/comments.jsx'
 import Footer from './components/footer.jsx'
 import Top from './components/top.jsx'
+import Card from "./card/card.jsx";
 
 function Form(){
 
@@ -36,13 +32,13 @@ function Form(){
     }
 
     return(
-            <div className="p-5">
+            <div className="pb-5 pl-5 pr-5">
                 <Top />
-                <Name text={name} setText={setName} error={nameError} setError={setNameError} />
-                <Email text={email} setText={setEmail} error={emailError} setError={setEmailError} />
-                <Address text={address} setText={setAddress} error={addressError} setError={setAddressError} />
-                <Phone text={phone} setText={setPhone} error={phoneError} setError={setPhoneError} />
-                <Comments text={comments} setText={setComments}/>
+                <Card text={name} setText={setName} error={nameError} setError={setNameError} fieldName={'Name'} required={true}/>
+                <Card text={email} setText={setEmail} error={emailError} setError={setEmailError} fieldName={'Email'} required={true}/>
+                <Card text={address} setText={setAddress} error={addressError} setError={setAddressError} fieldName={'Address'} required={true}/>
+                <Card text={phone} setText={setPhone} error={phoneError} setError={setPhoneError} fieldName={'Phone'} required={true}/>
+                <Card text={comments} setText={setComments} error={""} setError={setNameError} fieldName={'Comments'} required={false}/>
                 <Footer clearForm={clearForm}/>
             </div>
     );
